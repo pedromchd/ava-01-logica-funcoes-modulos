@@ -6,11 +6,11 @@ console.log(soma); // 10
 console.log(soma === 10); // true
 
 console.log(somaArray([89, 34, 546, 12, 54, 567, 1234, 43534, 345, 654])); // 47069
-console.log(somaArray([89, 34, 546, 12, 54, 567, 1234, 43534, 345, 654]) === 47069);
+console.log(somaArray([89, 34, 546, 12, 54, 567, 1234, 43534, 345, 654]) === 47069); // true
 
-console.log(somaArray([]) === 0);
-console.log(somaArray([5]) === 5);
-console.log(somaArray([5, -10]) === -5);
+console.log(somaArray([]) === 0);        // true
+console.log(somaArray([5]) === 5);       // true
+console.log(somaArray([5, -10]) === -5); // true
 
 import { contaVogais, contaConsoantes } from './contaVogais-e-Consoantes.js'
 
@@ -109,14 +109,19 @@ console.log(indices.length === 0); // true
 
 console.log(localizar(`array`, 'y')[0] === 4); // true
 
-// import { tifanoFex } from './tifanofaufoFex.js'
+import { tifanoFex } from './tifanofaufoFex.js'
 
-// const palavra = 'tiranossauro rex';
-// console.log(tifanoFex(palavra) === 'tifanofaufo fex'); // true
+const palavra = 'tiranossauro rex';
+console.log(tifanoFex(palavra) === 'tifanofaufo fex'); // true
 
-// console.log(tifanoFex('s S ss SS sS Ss r R rr RR rR Rr') === 'f F f F f F f F f F f F'); // true
-// console.log(tifanoFex('esse carro ERA MUITO FAMOSO') === 'efe cafo EFA MUITO FAMOFO'); // true
-// console.log(tifanoFex('casa cebola cimento cola cuia') === 'cafa febola fimento cola cuia'); // true
-// console.log(tifanoFex('piscina modesta') === 'pifina modefta'); // true
-// console.log(tifanoFex('fumar faz mal pra saúde') === 'fumaf faf mal pfa faúde');
-// console.log(tifanoFex('sSssSrSsRREERSSsDcsscSxXcxchXC') === '');// true
+console.log(tifanoFex('chá, cebola e cimento'));
+console.log(tifanoFex('chá, cebola e cimento') === 'fá, febola e fimento'); // true
+console.log(tifanoFex('carros são muito caros'));
+console.log(tifanoFex('carros são muito caros') === 'cafof fão muito cafof'); // true
+console.log(tifanoFex('cascão e cebolinha brincaram muito na praia enlamaçada'));
+console.log(tifanoFex('cascão e cebolinha brincaram muito na praia enlamaçada') === 'cafão e febolinha bfincafam muito na pfaia enlamafada'); // true
+console.log(tifanoFex('a piscina é uma exceção no isolamento do parque'));
+console.log(tifanoFex('a piscina é uma exceção no isolamento do parque') === 'a pifina é uma efefão no ifolamento do pafque'); // true
+console.log(tifanoFex('it\'s sasa lele!'));
+console.log(tifanoFex('it\'s sasa lele!') === 'it\'f fafa lele!'); // true
+
