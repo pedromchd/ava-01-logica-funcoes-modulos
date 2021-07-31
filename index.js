@@ -124,4 +124,5 @@ console.log(tifanoFex('a piscina é uma exceção no isolamento do parque'));
 console.log(tifanoFex('a piscina é uma exceção no isolamento do parque') === 'a pifina é uma efefão no ifolamento do pafque'); // true
 console.log(tifanoFex('it\'s sasa lele!'));
 console.log(tifanoFex('it\'s sasa lele!') === 'it\'f fafa lele!'); // true
-
+console.log(tifanoFex('EU SOU INVENCIVEL!!!'));
+console.log(tifanoFex('EU SOU INVENCIVEL!!!') === 'eu fou infenfifel!!!');

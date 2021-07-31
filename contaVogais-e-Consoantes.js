@@ -1,19 +1,15 @@
 console.log('contaVogais-e-Consoantes.js');
 
 export function contaVogais(array) {
-  let aux = 'aeiou';
-  let vogais = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (aux.indexOf(array[i]) !== -1) vogais++;
-  }
+  let vog = 'aeiou';
+  let vogais = Number();
+  for (const aux of array.toLowerCase()) if (vog.indexOf(aux) !== -1) vogais++;
   return vogais;
 }
 
 export function contaConsoantes(array) {
-  let aux = 'bcdfghjklmnpqrstvwxyz';
-  let consoantes = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (aux.indexOf(array[i]) !== -1) consoantes++;
-  }
+  let con = 'bcdfghjklmnpqrstvwxyz';
+  let consoantes = Number();
+  for (const aux of array.toLowerCase()) if (con.indexOf(aux) !== -1) consoantes++;
   return consoantes;
 }

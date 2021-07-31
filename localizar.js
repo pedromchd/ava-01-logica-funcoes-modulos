@@ -1,12 +1,10 @@
 console.log('localizar.js');
 
 export function localizar(str, chr) {
-  let local = [];
-  for (let i = 0; i < str.length; i++) {
-    if (chr.indexOf(str[i]) !== -1) {
-      local.push(i);
-      str = str.replace(str[i], '*');
-    }
+  let local = Array();
+  for (const aux of str) if (chr.indexOf(aux) !== -1) {
+    local.push(str.indexOf(aux));
+    str = str.replace(aux, '*');
   }
   return local;
 }
