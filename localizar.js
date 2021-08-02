@@ -8,3 +8,14 @@ export function localizar(str, chr) {
   }
   return local;
 }
+
+// export function localizar(str, chr) {
+//   let local = Array();
+//   str.forEach((v, i) => {
+//     if (chr.indexOf(v) !== -1) {
+//       local.push(i);
+//       str = str.replace(v, '*');
+//     }
+//   });
+// }
+// mta chiqueza melhor ficar no atual :v
