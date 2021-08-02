@@ -11,10 +11,10 @@ export function localizar(str, chr) {
 
 // export function localizar(str, chr) {
 //   let local = Array();
-//   str.forEach((v, i) => if (chr.indexOf(v) !== -1) {
+//   str.split('').forEach((v, i) => { if (chr.indexOf(v) !== -1) {
 //     local.push(i);
 //     str = str.replace(v, '*');
-//   });
+//   }});
 // return local;
 // }
 // mta chiqueza melhor ficar no atual :v
